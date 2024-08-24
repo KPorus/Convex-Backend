@@ -1,0 +1,9 @@
+
+.env.local
+.env
+
+node_modules
+
+package-lock.json
+
+/convex/_generated
