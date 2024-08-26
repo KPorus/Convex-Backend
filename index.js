@@ -6,7 +6,11 @@ dotenv.config({ path: ".env.local" });
 
 const app = express();
 app.use(express.json());
-
+// fun part
+app.use((req, res, next) => {
+    console.log(req.path, "I am watching you.")
+    next();
+})
 app.use(express.urlencoded({ extended: true }));
 
 //console.log(app.get("env"))
